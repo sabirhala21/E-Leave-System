@@ -1,0 +1,15 @@
+<?php
+@session_start();
+if($_SESSION['unm']==NULL){
+	unset($_SESSION);
+ header("location:index.php");
+}
+elseif($_SESSION['uID']==NULL){
+	unset($_SESSION);
+ header("location:index.php");
+}
+//if($_SESSION['moduleID']==NULL){
+//unset($_SESSION);
+ //header("location:index.php");
+//}
+?>
